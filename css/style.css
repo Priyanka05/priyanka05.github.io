@@ -474,3 +474,8 @@ body.inner-page .file-icon.ppt { border-color:#557b70; color:#41695e !important;
 body.inner-page .file-icon.ppt span { background:#41695e; }
 body.inner-page .file-icon:hover { transform:translateY(-2px); background:#f2e8df; }
 body.inner-page .file-icon.ppt:hover { background:#e8f0ec; }
+
+
+/* Resource icons match the original publications page: PDF, PowerPoint and video glyphs. */
+.inner-page .container a.resource-icon{display:inline-block;margin:0 5px;color:#c0392b;text-decoration:none;font-size:18px;line-height:1;vertical-align:middle}
+.inner-page .container a.resource-icon:hover{color:#8e2b20;transform:translateY(-1px)}
