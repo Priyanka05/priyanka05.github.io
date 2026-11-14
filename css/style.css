@@ -52,3 +52,34 @@ nav a{color:#30343b}
 .hero-intro,.section-intro>p,.research-grid p,.featured-papers p,.talk-list p,.journey-grid p,.teaching-copy p{color:#30343b}
 .hero-context{color:#30343b}
 .paper-note a{color:#245b78;text-decoration:underline;text-underline-offset:3px}
+
+
+/* Homepage typography: true black for readable body copy */
+body.home-page,
+body.home-page .site-header,
+body.home-page main,
+body.home-page .site-footer { color:#000 !important; }
+body.home-page .site-header a,
+body.home-page main p,
+body.home-page main h1,
+body.home-page main h2,
+body.home-page main h3,
+body.home-page main li,
+body.home-page main .section-kicker,
+body.home-page main .eyebrow,
+body.home-page main .hero-specialty,
+body.home-page main .hero-context,
+body.home-page main .text-link,
+body.home-page main .paper-note,
+body.home-page main .talk-tag,
+body.home-page main .resource-link,
+body.home-page .site-footer span { color:#000 !important; }
+body.home-page .ticker-section,
+body.home-page .ticker-section *,
+body.home-page .button-primary,
+body.home-page .button-primary *,
+body.home-page .button-light,
+body.home-page .button-light * { color:#fff !important; }
+body.home-page .ticker-section .ticker-label,
+body.home-page .ticker-section .ticker-track b,
+body.home-page .ticker-section .ticker-track i { color:#f2b79e !important; }
