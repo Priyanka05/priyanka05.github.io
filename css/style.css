@@ -184,3 +184,13 @@ body.inner-page .project-list h3 span {
  body.inner-page .page-banner { grid-template-columns:minmax(0,1fr) 88px !important; }
  body.inner-page .page-banner img { width:84px !important;height:84px !important; }
 }
+
+
+/* Compact primary navigation and integrated mentoring note */
+body.home-page .nav-wrap { min-height:56px; padding-top:0; padding-bottom:0; }
+body.home-page nav { gap:22px; }
+body.home-page nav a { line-height:1.2; }
+body.home-page nav .nav-resume { padding:6px 12px; }
+body.home-page .research-mentoring { margin-top:22px; padding-top:14px; border-top:1px solid var(--line); }
+body.home-page .research-mentoring p { margin:0; font-size:14px; color:#30343b; }
+body.home-page .research-mentoring strong { color:var(--navy); }
