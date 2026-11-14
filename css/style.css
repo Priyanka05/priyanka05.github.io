@@ -44,3 +44,11 @@ h1,h2,h3{font-family:Manrope,"DM Sans",sans-serif;line-height:1.2;letter-spacing
  .home-section{padding:38px 22px}
  .hero-links{margin-top:12px}
 }
+
+/* Stronger contrast and clearer resource links */
+:root{--ink:#111111;--muted:#30343b;--navy:#111827}
+body{color:#111}
+nav a{color:#30343b}
+.hero-intro,.section-intro>p,.research-grid p,.featured-papers p,.talk-list p,.journey-grid p,.teaching-copy p{color:#30343b}
+.hero-context{color:#30343b}
+.paper-note a{color:#245b78;text-decoration:underline;text-underline-offset:3px}
