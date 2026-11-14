@@ -409,3 +409,68 @@ body.inner-page .research-overview ol { margin:12px 0 0; padding-left:22px; }
 body.inner-page .research-overview li { padding:0 0 12px 4px; }
 body.inner-page .research-overview li:last-child { padding-bottom:0; }
 body.inner-page .research-overview h3 { margin:0 0 5px; font-size:16px; color:#111; }
+
+
+/* Publication titles and compact, clickable document-type icons */
+body.inner-page .publication-title,
+body.inner-page .project-list h3,
+body.inner-page .project-list h3 span {
+  color:#895039 !important;
+}
+body.inner-page .publication-title { font-weight:800; }
+body.inner-page .file-icon {
+  display:inline-flex !important;
+  position:relative;
+  width:34px;
+  height:38px;
+  margin:0 5px 0 7px;
+  padding:0 !important;
+  align-items:flex-end;
+  justify-content:center;
+  border:1.5px solid #9a6b55;
+  border-radius:3px;
+  background:#fffaf4;
+  color:#895039 !important;
+  text-decoration:none !important;
+  vertical-align:middle;
+  box-shadow:0 2px 4px rgba(65,45,32,.08);
+  transition:transform .16s ease,background .16s ease;
+}
+body.inner-page .file-icon::before {
+  content:"";
+  position:absolute;
+  top:5px;
+  left:9px;
+  width:14px;
+  height:17px;
+  border:1.5px solid currentColor;
+  border-radius:1px;
+  background:linear-gradient(to bottom,transparent 0 5px,#d9c4b6 5px 6px,transparent 6px 9px,#d9c4b6 9px 10px,transparent 10px);
+}
+body.inner-page .file-icon::after {
+  content:"";
+  position:absolute;
+  top:5px;
+  left:19px;
+  width:5px;
+  height:5px;
+  background:#fffaf4;
+  border-left:1.5px solid currentColor;
+  border-bottom:1.5px solid currentColor;
+}
+body.inner-page .file-icon span {
+  position:relative;
+  z-index:1;
+  display:block;
+  width:100%;
+  padding:1px 0;
+  background:#895039;
+  color:#fff !important;
+  font:800 8px/1.4 "DM Sans",sans-serif;
+  letter-spacing:.4px;
+  text-align:center;
+}
+body.inner-page .file-icon.ppt { border-color:#557b70; color:#41695e !important; }
+body.inner-page .file-icon.ppt span { background:#41695e; }
+body.inner-page .file-icon:hover { transform:translateY(-2px); background:#f2e8df; }
+body.inner-page .file-icon.ppt:hover { background:#e8f0ec; }
