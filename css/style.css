@@ -479,3 +479,8 @@ body.inner-page .file-icon.ppt:hover { background:#e8f0ec; }
 /* Resource icons match the original publications page: PDF, PowerPoint and video glyphs. */
 .inner-page .container a.resource-icon{display:inline-block;margin:0 5px;color:#c0392b;text-decoration:none;font-size:18px;line-height:1;vertical-align:middle}
 .inner-page .container a.resource-icon:hover{color:#8e2b20;transform:translateY(-1px)}
+
+/* Self-contained resource glyphs: no icon-font or CDN dependency. */
+.inner-page .container a.resource-icon{display:inline-flex!important;align-items:center;justify-content:center;width:25px;height:25px;margin:0 4px;color:#c0392b!important;text-decoration:none!important;vertical-align:middle}
+.inner-page .container a.resource-icon .resource-svg{display:block;width:23px;height:23px;overflow:visible}
+.inner-page .container a.resource-icon:hover{color:#8e2b20!important;transform:translateY(-1px)}
