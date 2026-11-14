@@ -122,3 +122,65 @@ body.inner-page{background:var(--paper);color:#000}
 .journey-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:900px){.journey-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.journey-grid{grid-template-columns:1fr}}
+
+
+/* FINAL INNER-PAGE OVERRIDES — match the homepage palette and contrast */
+html, body.inner-page, body.inner-page main, body.inner-page .inner-main {
+  background-color:#fbf8f2 !important;
+  color:#000000 !important;
+}
+body.inner-page .site-header { background:rgba(251,248,242,.97) !important; }
+body.inner-page .page-banner {
+  background:transparent !important;
+  max-width:1172px !important;
+  padding:38px 0 26px !important;
+  grid-template-columns:minmax(0,1fr) 156px !important;
+}
+body.inner-page .page-banner img {
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  width:148px !important;
+  height:148px !important;
+  aspect-ratio:1/1 !important;
+  object-fit:cover !important;
+  object-position:center 22% !important;
+  border:7px solid #eee7dc !important;
+  box-shadow:9px 9px 0 #e2d7c8 !important;
+  border-radius:2px !important;
+}
+body.inner-page .container {
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  color:#000000 !important;
+}
+body.inner-page .container *,
+body.inner-page .page-banner h1,
+body.inner-page .page-banner p,
+body.inner-page .site-footer,
+body.inner-page .site-footer * {
+  color:#000000 !important;
+}
+body.inner-page .container a {
+  color:#000000 !important;
+  text-decoration:underline !important;
+  text-decoration-color:#b86f50 !important;
+  text-underline-offset:3px !important;
+}
+body.inner-page .inner-cards article {
+  background:#f5f0e8 !important;
+  border-color:#e7e0d6 !important;
+  border-left-color:#d9a18c !important;
+}
+body.inner-page th, body.inner-page td { color:#000000 !important; }
+body.inner-page .page-banner .section-kicker,
+body.inner-page .inner-cards article span,
+body.inner-page .update-list time,
+body.inner-page .project-list h3 span {
+  color:#9b5035 !important;
+}
+@media(max-width:680px) {
+ body.inner-page .page-banner { grid-template-columns:minmax(0,1fr) 88px !important; }
+ body.inner-page .page-banner img { width:84px !important;height:84px !important; }
+}
