@@ -388,3 +388,24 @@ body.home-page .org-link:hover {
   color:#a9583b !important;
   text-decoration-color:#a9583b;
 }
+
+
+/* Final requested refinements: blue credentials, unified navigation, and clear research landing page */
+body.home-page .hero-context {
+  color:#245b78 !important;
+  background:#eaf1f7;
+  border:1px solid #c8d9e7;
+}
+body.home-page .hero-context .org-link { color:#245b78 !important; }
+body.home-page nav a[href="full_updates.html"],
+body.inner-page nav a[href="full_updates.html"] { color:#245b78; }
+body.inner-page .nav-wrap { min-height:56px; }
+body.inner-page nav { gap:22px; }
+body.inner-page nav a { line-height:1.2; }
+body.inner-page .research-overview { margin:0 0 42px; padding:24px; background:#f2eee7; border-left:4px solid #6c9a8c; }
+body.inner-page .research-overview h2 { margin:0 0 10px; }
+body.inner-page .research-overview p { margin:0 0 12px; }
+body.inner-page .research-overview ol { margin:12px 0 0; padding-left:22px; }
+body.inner-page .research-overview li { padding:0 0 12px 4px; }
+body.inner-page .research-overview li:last-child { padding-bottom:0; }
+body.inner-page .research-overview h3 { margin:0 0 5px; font-size:16px; color:#111; }
