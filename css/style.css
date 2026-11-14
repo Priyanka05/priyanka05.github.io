@@ -117,3 +117,8 @@ body.inner-page{background:var(--paper);color:#000}
 .inner-page .site-footer{max-width:1172px;padding:22px 0;color:#30343b}
 @media(max-width:900px){.inner-page .page-banner{margin:0 28px}.inner-page .container{width:calc(100% - 56px)}.inner-page .site-footer{padding:20px 28px}}
 @media(max-width:680px){.inner-page .page-banner{margin:0 22px;padding:28px 0 18px;grid-template-columns:1fr 76px;gap:14px}.inner-page .page-banner img{width:72px;height:72px}.inner-page .container{width:calc(100% - 44px);padding-top:25px}.inner-page .inner-cards{grid-template-columns:1fr}.inner-page .update-list li{grid-template-columns:1fr;gap:4px}.inner-page .site-footer{padding:20px 22px;flex-direction:column}}
+
+/* Four milestones in the homepage journey strip */
+.journey-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.journey-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.journey-grid{grid-template-columns:1fr}}
