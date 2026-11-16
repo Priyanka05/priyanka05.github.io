@@ -1237,3 +1237,187 @@ body.experience-page .site-footer {
   body.experience-page #mentoring th,
   body.experience-page #mentoring td { padding:8px 7px; }
 }
+
+
+/* HOMEPAGE MOBILE REBALANCE — readable width, calm navigation, natural scrolling */
+@media (max-width:680px) {
+  body.home-page { overflow-x:hidden; }
+  body.home-page .site-header .nav-wrap {
+    min-height:0;
+    padding:12px 20px 10px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:9px;
+  }
+  body.home-page .site-header .brand {
+    align-self:flex-start;
+    font-size:23px;
+    line-height:1.1;
+  }
+  body.home-page .site-header nav {
+    width:calc(100vw - 40px);
+    margin:0;
+    padding:2px 0 5px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    gap:18px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+  body.home-page .site-header nav::-webkit-scrollbar { display:none; }
+  body.home-page .site-header nav .nav-label { display:none; }
+  body.home-page .site-header nav a {
+    flex:0 0 auto;
+    font-size:12px;
+    line-height:1.4;
+    white-space:nowrap;
+  }
+  body.home-page .site-header nav .nav-resume {
+    padding:0;
+    border:0;
+    background:transparent;
+  }
+
+  body.home-page .home-hero {
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:17px;
+    padding:23px 22px 22px;
+    background:linear-gradient(135deg,#f7f0e7 0%,#fbf8f2 72%);
+  }
+  body.home-page .home-portrait {
+    order:-1;
+    width:100%;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:15px;
+  }
+  body.home-page .portrait-frame {
+    flex:0 0 82px;
+    width:82px;
+    padding:4px;
+    transform:rotate(1deg);
+    box-shadow:5px 5px 0 #ddcbbb;
+  }
+  body.home-page .portrait-frame img {
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    object-position:center 22%;
+  }
+  body.home-page .home-portrait .hero-links {
+    width:auto;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:5px;
+    text-align:left;
+    font-size:12px;
+  }
+  body.home-page .home-portrait .hero-links a {
+    font-size:12px;
+    line-height:1.35;
+  }
+  body.home-page .home-hero-copy { width:100%; min-width:0; }
+  body.home-page .hero-specialty {
+    max-width:100%;
+    margin:0 0 8px;
+    font-size:11px;
+    line-height:1.4;
+  }
+  body.home-page .home-hero h1 {
+    margin:0 0 8px;
+    font-size:clamp(36px,10vw,44px);
+    line-height:1.06;
+    letter-spacing:-1.8px;
+    overflow-wrap:normal;
+  }
+  body.home-page .hero-context {
+    margin:0 0 12px;
+    padding:0;
+    font-size:11px;
+    line-height:1.55;
+  }
+  body.home-page .hero-intro {
+    max-width:none;
+    margin:0;
+    font-size:14px;
+    line-height:1.62;
+  }
+
+  body.home-page .research-section {
+    margin:0;
+    padding:27px 22px 25px;
+  }
+  body.home-page .research-section .section-kicker {
+    margin:0 0 9px;
+    font-size:10px;
+    letter-spacing:1.6px;
+  }
+  body.home-page .research-section .section-intro {
+    margin:0 0 18px;
+  }
+  body.home-page .research-section .section-intro>p {
+    max-width:none;
+    font-size:13px;
+    line-height:1.6;
+  }
+  body.home-page .research-grid {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+  body.home-page .research-grid article {
+    padding:11px 0 0;
+    border-top:1px solid #d8cbbd;
+  }
+  body.home-page .research-grid article>span { font-size:11px; }
+  body.home-page .research-grid h3 {
+    margin:4px 0 5px;
+    font-size:16px;
+    line-height:1.35;
+  }
+  body.home-page .research-grid p {
+    max-width:none;
+    font-size:12px;
+    line-height:1.55;
+  }
+  body.home-page .ticker-section {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:7px 12px;
+    padding:13px 18px;
+  }
+  body.home-page .ticker-label { font-size:9px; }
+  body.home-page .ticker-window { grid-column:1/-1; grid-row:2; }
+  body.home-page .ticker-track { gap:20px; }
+  body.home-page .ticker-track span { font-size:11px; }
+  body.home-page .ticker-section>a { grid-column:2; grid-row:1; font-size:11px; }
+  body.home-page .site-footer {
+    padding:14px 22px 18px;
+    gap:4px;
+    font-size:10px;
+    line-height:1.5;
+  }
+}
+@media (min-width:681px) and (max-width:900px) {
+  body.home-page .home-hero {
+    padding:28px 28px 25px;
+    grid-template-columns:minmax(0,1fr) 180px;
+    gap:25px;
+  }
+  body.home-page .home-portrait { width:170px; }
+  body.home-page .hero-intro { font-size:13px; }
+  body.home-page .research-section { margin:0 28px; }
+}
