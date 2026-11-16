@@ -525,3 +525,27 @@ body.home-page .journey-grid p { line-height:1.55; }
   body.home-page .journey-grid { grid-template-columns:1fr; }
   body.home-page .journey-grid article { min-height:0; }
 }
+
+
+/* Social links sit neatly beneath the homepage portrait */
+body.home-page .home-portrait .hero-links {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:9px 15px;
+  width:100%;
+  margin:25px 0 0;
+  text-align:center;
+  font-size:13px;
+}
+body.home-page .home-portrait .hero-links a {
+  color:#245b78 !important;
+  font-weight:600;
+  text-decoration:none;
+  text-underline-offset:4px;
+}
+body.home-page .home-portrait .hero-links a:hover {
+  color:#a9583b !important;
+  text-decoration:underline;
+}
