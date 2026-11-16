@@ -945,3 +945,12 @@ body.home-page .site-footer {
   body.home-page .research-grid p { font-size:10px; }
   body.home-page .ticker-section { padding-top:5px; padding-bottom:5px; }
 }
+
+
+/* Remove the dark drop shadow/border beneath the recent-updates marquee */
+body.home-page .ticker-section {
+  box-shadow:none !important;
+  border:0 !important;
+  outline:0 !important;
+  margin-bottom:0 !important;
+}
