@@ -1071,3 +1071,169 @@ body.experience-page .site-footer {
     font-size:11px;
   }
 }
+
+
+/* EXPERIENCE PAGE — phone-first alignment and readable content */
+@media (max-width:680px) {
+  body.experience-page { overflow-x:hidden; }
+  body.experience-page .site-header .nav-wrap {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+    padding:12px 16px 10px;
+  }
+  body.experience-page .site-header .brand {
+    font-size:21px;
+    line-height:1;
+  }
+  body.experience-page .site-header nav {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:center;
+    gap:8px 14px;
+    padding:0;
+  }
+  body.experience-page .site-header nav .nav-label {
+    width:100%;
+    margin:0 0 1px;
+    font-size:8px;
+    letter-spacing:1.3px;
+  }
+  body.experience-page .site-header nav a {
+    display:inline-block;
+    font-size:11px;
+    line-height:1.35;
+    white-space:normal;
+  }
+  body.experience-page .site-header nav .nav-resume {
+    padding:0;
+    background:transparent;
+    border:0;
+  }
+  body.experience-page .page-banner {
+    width:auto;
+    margin:0 18px;
+    padding:18px 0 14px !important;
+    grid-template-columns:minmax(0,1fr) 68px !important;
+    gap:12px;
+    align-items:center;
+  }
+  body.experience-page .page-banner .section-kicker {
+    font-size:8px;
+    letter-spacing:1.2px;
+    line-height:1.4;
+  }
+  body.experience-page .page-banner h1 {
+    max-width:100%;
+    margin:4px 0 6px;
+    font-size:clamp(23px,6.4vw,29px);
+    line-height:1.12;
+    letter-spacing:-.7px;
+    overflow-wrap:normal;
+  }
+  body.experience-page .page-banner p:last-child {
+    font-size:11px;
+    line-height:1.45;
+  }
+  body.experience-page .page-banner img {
+    width:64px !important;
+    height:64px !important;
+    border:3px solid #eee7dc !important;
+    box-shadow:4px 4px 0 #e2d7c8 !important;
+  }
+  body.experience-page .container {
+    width:calc(100% - 36px);
+    margin:0 auto;
+    padding:16px 0 20px;
+  }
+  body.experience-page .container h2 {
+    margin:0 0 9px;
+    font-size:19px;
+    line-height:1.25;
+    letter-spacing:-.25px;
+  }
+  body.experience-page .section {
+    margin:0 0 18px;
+    padding:0 0 15px;
+  }
+  body.experience-page .inner-cards {
+    grid-template-columns:minmax(0,1fr);
+    gap:8px;
+    margin:10px 0 18px;
+  }
+  body.experience-page .inner-cards article {
+    padding:11px 13px 12px;
+    border-radius:4px;
+  }
+  body.experience-page .inner-cards h3 {
+    margin:5px 0 4px;
+    font-size:14px;
+    line-height:1.3;
+  }
+  body.experience-page .inner-cards p,
+  body.experience-page .inner-list li,
+  body.experience-page .container > .section > p {
+    font-size:12px;
+    line-height:1.5;
+  }
+  body.experience-page .inner-list {
+    padding-left:19px;
+    margin:7px 0 0;
+  }
+  body.experience-page .inner-list li {
+    padding:0 0 8px 2px;
+    overflow-wrap:anywhere;
+  }
+  body.experience-page #mentoring {
+    overflow:visible;
+  }
+  body.experience-page #mentoring table {
+    display:block;
+    width:100%;
+    max-width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    table-layout:fixed;
+    font-size:11px;
+  }
+  body.experience-page #mentoring thead,
+  body.experience-page #mentoring tbody {
+    width:100%;
+  }
+  body.experience-page #mentoring th:first-child,
+  body.experience-page #mentoring td:first-child {
+    width:34%;
+  }
+  body.experience-page #mentoring th:last-child,
+  body.experience-page #mentoring td:last-child {
+    width:66%;
+  }
+  body.experience-page #mentoring th,
+  body.experience-page #mentoring td {
+    padding:8px 6px;
+    font-size:11px;
+    line-height:1.4;
+    vertical-align:top;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  body.experience-page .site-footer {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:5px;
+    padding:12px 18px 16px;
+    font-size:10px;
+    line-height:1.4;
+  }
+}
+@media (min-width:681px) and (max-width:900px) {
+  body.experience-page .page-banner { margin:0 28px; }
+  body.experience-page .container { width:calc(100% - 56px); }
+  body.experience-page .inner-cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  body.experience-page #mentoring th,
+  body.experience-page #mentoring td { padding:8px 7px; }
+}
