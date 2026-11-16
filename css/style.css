@@ -662,3 +662,25 @@ body.home-page .site-footer { padding-top:10px;padding-bottom:10px; }
   .site-header nav .nav-label { width:100%; }
   .site-header nav a { font-size:10px; }
 }
+
+
+/* Final homepage specialty treatment: plain text, no white chip */
+body.home-page .hero-specialty {
+  display:block;
+  margin:0 0 7px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:#245b78 !important;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.2px;
+}
+
+/* Keep the Explore navigation on one compact, legible row where possible */
+.site-header nav { gap:clamp(8px,1.25vw,18px); }
+.site-header nav .nav-label { font-size:9px; }
+.site-header nav a { font-size:11px; }
+@media(max-width:760px) {
+  .site-header nav { flex-wrap:wrap; justify-content:flex-end; }
+}
