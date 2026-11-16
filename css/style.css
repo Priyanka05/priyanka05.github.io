@@ -772,3 +772,77 @@ body.home-page .research-grid p {
   body.home-page .research-grid h3 { margin:5px 0 4px; }
   body.home-page .research-grid p { max-width:none; }
 }
+
+
+/* HOMEPAGE SPACING CLEANUP — fewer rules and tighter first-screen composition */
+body.home-page .home-hero {
+  padding-top:18px;
+  padding-bottom:16px;
+  border:0;
+}
+body.home-page .hero-specialty {
+  margin-bottom:7px;
+  padding:0;
+  border:0;
+  background:transparent;
+}
+body.home-page .hero-context {
+  margin:7px 0 10px;
+  padding:0;
+  border:0;
+  background:transparent;
+}
+body.home-page .hero-intro {
+  margin-top:8px;
+  line-height:1.48;
+}
+body.home-page .home-portrait .hero-links {
+  margin-top:12px;
+  gap:15px;
+}
+body.home-page .research-section {
+  margin-top:0;
+  padding-top:12px;
+  padding-bottom:12px;
+  border:0;
+  background:transparent;
+}
+body.home-page .research-section .section-kicker {
+  margin-bottom:5px;
+}
+body.home-page .research-section .section-intro {
+  margin-bottom:10px;
+}
+body.home-page .research-section .section-intro>p {
+  line-height:1.4;
+}
+body.home-page .research-grid {
+  gap:22px;
+}
+body.home-page .research-grid article {
+  padding-top:8px;
+  border:0;
+}
+body.home-page .research-grid h3 {
+  margin:5px 0 4px;
+}
+body.home-page .research-grid p {
+  line-height:1.4;
+}
+body.home-page .ticker-section {
+  margin-top:4px;
+  padding-top:11px;
+  padding-bottom:11px;
+  box-shadow:none;
+}
+@media(max-width:900px) {
+  body.home-page .home-hero { padding-top:17px; padding-bottom:14px; }
+  body.home-page .research-section { padding-top:10px; padding-bottom:10px; }
+}
+@media(max-width:680px) {
+  body.home-page .home-hero { padding:16px 20px 12px; }
+  body.home-page .research-section { padding:10px 0 12px; }
+  body.home-page .research-grid { gap:9px; }
+  body.home-page .research-grid article { padding-top:5px; }
+  body.home-page .ticker-section { margin-top:2px; }
+}
